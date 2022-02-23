@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import './main.scss'
+import './assets/styles/main.scss'
 
 function Main() {
     return <div>This is main component!!!</div>
