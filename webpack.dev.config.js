@@ -1,9 +1,6 @@
 const path = require('path')
-// eslint-disable-next-line import/no-extraneous-dependencies
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-// eslint-disable-next-line import/no-extraneous-dependencies
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
-// eslint-disable-next-line import/no-extraneous-dependencies
 const ESLintPlugin = require('eslint-webpack-plugin')
 
 const config = {

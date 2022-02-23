@@ -26,6 +26,8 @@
         "ENABLE_SOCKETS": true
     },
     "rules": {
+        "no-console": "off",
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
         "prettier/prettier": ["warn"],
         "space-before-function-paren": "off",
         "react/prefer-stateless-function": "warn",

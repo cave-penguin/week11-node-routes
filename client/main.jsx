@@ -2,11 +2,9 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import './assets/styles/main.scss'
 
-function Main() {
-    return <div>This is main component!!!</div>
-}
+// eslint-disable-next-line import/extensions
+import Root from './config/root.jsx'
 
 const target = document.getElementById('root')
-// const target = document.querySelector('#root')
 
-ReactDom.render(<Main />, target)
+ReactDom.render(<Root />, target)
