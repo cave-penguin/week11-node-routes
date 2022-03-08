@@ -19,8 +19,8 @@ const config = {
         },
         port: 8087,
         proxy: {
-            context: ['/api'],
-            target: 'http://localhost:8090'
+            context: ['/api', '/ws'],
+            target: `http://localhost:${process.env.PORT || 8090}`
         },
         host: 'localhost',
         historyApiFallback: true,
