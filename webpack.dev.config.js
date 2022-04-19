@@ -19,8 +19,9 @@ const config = {
         },
         port: 8087,
         proxy: {
-            context: ['/api', '/ws'],
+            context: ['/api'],
             target: `http://localhost:${process.env.PORT || 8090}`
+            // ws: true
         },
         host: 'localhost',
         historyApiFallback: true,
@@ -31,6 +32,7 @@ const config = {
             }
         }
     },
+
     module: {
         rules: [
             {

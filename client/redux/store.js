@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-// import socketIOClient from 'socket.io-client'
+// import { io } from 'socket.io-client'
 
 import rootReducer from './reducers'
 
@@ -15,10 +15,12 @@ const store = createStore(rootReducer(), initialState, composeEnhansers)
 
 // let socket
 
-const initSocket = () => {
-    // socket = new socketIOClient()
-}
+// const initSocket = () => {
+//     socket = io('http://localhost/ws')
+//     // eslint-disable-next-line no-console
+//     console.log(socket)
+// }
 
-initSocket()
+// initSocket()
 
 export default store
